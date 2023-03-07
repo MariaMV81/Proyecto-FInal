@@ -1,0 +1,42 @@
+.bar-icons{
+    display: grid; /*genera una  cuadrícula de nivel de bloque*/
+    grid-template-columns: repeat(3, auto);/*crea una plantilla de cuadricula haciendo referencia con "nombre" a las areas de cuadricula que nombramos */
+    box-shadow: -12px 12px 8px 0   ;
+    text-transform: uppercase;   
+    color: grey;
+}
+
+
+.container-icons{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:center;
+    margin: 5%;
+    font-size: 14px;
+    
+
+}
+
+/* @media screen and (min-width: 768px){
+    .bar-icons{
+       
+        grid-template-rows: repeat(3, auto);
+        
+    }
+    .container-icons{
+        
+        flex-direction: column;
+    }
+    } */
+
+.text-icons{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.text-icons h3{
+    margin-bottom: 5px;
+}

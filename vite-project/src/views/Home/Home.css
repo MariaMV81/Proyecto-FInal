@@ -1,0 +1,19 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #faf9f9;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  main{
+    max-width: 1900px;
+    margin: 0px auto;
+    overflow: hidden;/*importante para que el carousel funcine de forma correcta, para que lo que este fuera de los 1000px este oculto*/
+  }
+
+

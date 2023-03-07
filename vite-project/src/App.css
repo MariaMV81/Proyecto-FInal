@@ -1,0 +1,35 @@
+/*variables*/
+:root{
+  /*colores*/
+  --primario:#f87724;
+  --primario-claro:rgb(248, 119, 36, 0.2);
+  --negro:black;
+  --blanco: white;
+  --gris:#484848;
+  /*tamaño de texto*/
+  --texto-base: 16px;
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  /*espacios*/
+  --s:8px;
+  --m:16px;
+  --l:24px;
+}
+@media screen and (max-width: 480px){
+  
+}
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #303030;
+    --blanco: #ececec;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+
+
+
+
+

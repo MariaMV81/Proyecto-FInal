@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.conctact-form{
+ position: relative;
+    background: rgb(253, 252, 252);
+    width: 100%;
+    max-width: 500px; /*ancho maximo*/
+    margin: 56px auto; /* auto para centrar*/
+    color: #f80505;
+    border-radius: 5px ;
+    
+   
+}
+
+.conctact-form h2{
+  margin: 0 0 28px 0;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: Monserrat, sans-serif;
+  color:#484848;
+  text-transform: uppercase;
+  margin-left: 1px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 30px;
+  text-decoration-color: #f87724;
+   
+}
+.p{
+    color: #484848;
+}
+
+.mail-phone {
+display: flex;
+width: 100%;
+gap: 16px;
+margin-bottom: 20px;
+
+
+}
+
+.privacity {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.25em;
+    align-items: center;
+    color: #f87724;
+  }
+  
+  .privacity > input {
+    margin-right: 0.625em;
+  
+  }
+  
+  .privacity > label {
+    color: #292929;
+  }
+  
+  .checkbox, input[type="checkbox"] {
+    color:  grey;
+    
+  }
+  
+.conctact-form input[type="text"],
+.conctact-form input[type="number"],
+.conctact-form textarea,
+.conctact-form input[type="email"]{
+  outline: none;
+  background:white;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: #e4dcd7;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #6c6662;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  transition: all .5s ease;
+
+}
+.conctact-form input[type="text"]:focus,
+.conctact-form input[type="checkbox"]:focus,
+.conctact-form textarea:focus,
+.conctact-form input[type="number"]:focus,
+.conctact-form input[type="email"]:focus{
+  border: 2px solid #f87724;
+  color: #f88238;
+  outline-color:#f87724;
+
+}
+.conctact-form button[type="submit"]{
+    background: #f87724;
+    color: #f8f6f3;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+.conctact-form button[type="submit"]:hover {
+  background:rgb(255, 255, 255);
+  color:#f87724;
+  border: 1px solid #f87724;
+  border-radius: 8px;
+}
+section{
+  
+    padding: 5% 5% 5% 0;
+}
+.container-logos-contact{
+    display: grid;
+    grid-template-rows: 100px 100px ;
+    grid-gap: 8px;
+    grid-template-areas:
+    "area1 area1 . area2 area2 . area3 area3 "
+    "area1 area1 . area2 area2 . area3 area3 "
+    
+    ;
+   
+    justify-items: stretch;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: #484848;
+
+    
+}
+
+.grid-item1 {
+    text-align: center;
+    grid-area: area1;
+    
+  }
+  
+  .grid-item2 {
+    text-align: center;
+    grid-area: area2;
+   
+  }
+  
+  .grid-item3 {
+    text-align: center;
+    grid-area: area3;
+    
+  }
+
+
+
+  @media only screen and (max-width: 600px) and (min-width: 320px) {
+   
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 150px;
+    }
+    .conctact-form{
+        position: relative;
+        background: rgba(247, 245, 243, 0.2);
+        width: 100%;
+        max-width: 500px; /*ancho maximo*/
+        margin: 100px 100px 100px 50px; /* auto para centrar*/
+        color: #fff;
+        border-radius: 8px ;
+        
+       
+    }
+    
+    section{
+        padding: 5% 5% 5% 0;
+    }
+    .container-logos-contact{
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-areas:
+        "area2 area2 . area3 area3 "
+        "area2 area2 . area3 area3 "
+        "area1 area1 area1 area1 area1 "
+        "area1 area1 area1 area1 area1 ";
+       
+        justify-items: stretch;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #484848;
+        
+    }
+    
+    .grid-item1 {
+        text-align: center;
+        grid-area: area1;
+        font-weight: 700;
+      }
+      
+      .grid-item2 {
+        text-align: center;
+        grid-area: area2;
+        font-weight: 700;
+      }
+      
+      .grid-item3 {
+        text-align: center;
+        grid-area: area3;
+        font-weight: 700;
+      }
+  }

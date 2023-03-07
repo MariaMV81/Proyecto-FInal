@@ -1,0 +1,60 @@
+.container-orderList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding:50px;
+   
+
+}
+.container-map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+.tiempo{
+    display: flex;
+    width: 100%;
+    justify-content:left;
+    padding-left: 100px;
+ 
+}
+
+.container-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.list-item {
+    border-bottom: 1px solid #f87724;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+
+
+.container-list h1{
+    margin: 0 0 28px 0;
+    font-weight:600;
+    font-size: 2rem;
+    font-family: Monserrat, sans-serif;
+    color:#484848;
+    text-transform: uppercase;
+    margin-left: 1px;
+    text-align: center;
+    padding-top: 100px;
+    text-decoration: underline ; 
+    padding-bottom: 30px;
+    text-decoration-color:#f87724 ;
+
+}
+
+    
+
+
+
+

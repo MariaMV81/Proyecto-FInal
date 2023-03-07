@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container-pedido-clientes{
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    padding: 10%;
+}
+.container-pedido-clientes td {
+    color: grey;
+    display: table-cell;
+    vertical-align: inherit;
+
+}
+.container-pedido-clientes td, th {
+    border: 1px solid #f87724;
+    padding: 5px 10px;
+   
+}
+
+.container-pedido-clientes h1{
+    display: block;
+    text-align: center;
+    text-overflow: clip;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 0 0 28px 0;
+    color:#484848;
+    text-transform: uppercase;
+    text-align: center;
+
+}
