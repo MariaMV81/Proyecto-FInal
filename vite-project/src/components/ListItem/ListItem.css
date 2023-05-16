@@ -10,7 +10,6 @@
     top: -130%;
     left: 50%;
     transform: translateX(-50%);
-   
     background-color: rgb(234, 94, 8);
     padding: 4px 8px;
     border-radius: 5px;
@@ -29,6 +28,7 @@
     border-bottom: 1px solid orangered;
     padding: 10px;
     margin-bottom: 10px;
+    
   }
   
   .icon {
@@ -49,4 +49,6 @@
     opacity: 1;
     top: -160%;
   }
+
+  
   

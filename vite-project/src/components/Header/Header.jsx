@@ -39,18 +39,18 @@ export default function Header() {
                     <Link to="/customerOrders">Mis Pedidos</Link>
                   </li>
                   <li>
-                    <Link to="/cliente">Formulario de Pedido</Link>
+                    <Link to="/cliente">Nuevo Pedido</Link>
                   </li>
                 </>
               )}
 
               {authorization.rol === ROLES.Admin && (
                 <>
-                  <li>
+                  {/* <li>
                     <Link to={`Admin/${authorization.id}`}>Administrador</Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link to="/orderList"> PEDIDOS</Link>
+                    <Link to="/orderList">Lista PEDIDOS</Link>
                   </li>
                 </>
               )}
@@ -61,10 +61,10 @@ export default function Header() {
                 style={{ cursor: "pointer" }}
                 onClick={logout}
               >
-                Logout
+                Cerrar Sesión
               </span>
             ) : (
-              <Link to="/login">Login </Link>
+              <Link to="/login">Iniciar Sesión </Link>
             )}
           </ul>
         </nav>

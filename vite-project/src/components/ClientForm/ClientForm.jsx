@@ -130,7 +130,7 @@ export default function ClientForm({ setState, state, onSubmit }) {
             <input
               name="consignatario"
               type="text"
-              placeholder="Consignatario"
+              placeholder="Destinatario"
               value={values.consignatario}
               onChange={handleChange}
               onBlur={handleBlur}

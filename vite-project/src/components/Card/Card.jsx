@@ -6,6 +6,7 @@ import {monthNames} from '../../const/monthNames';
 export default function Card({ todos, item, setState }) {
   return (
     <>
+    
       <article className="article_card">
         <div className="fecha">
           <span className="dia"> {todos.dia_entrega}</span>
@@ -32,7 +33,7 @@ export default function Card({ todos, item, setState }) {
           </div>
         </div>
 
-        <div className="button-card">
+        {/* <div className="button-card">
           <button class="btn" onClick={(e) => setState(e, item.id)}>
             <svg
               viewBox="0 0 15 17.5"
@@ -48,7 +49,7 @@ export default function Card({ todos, item, setState }) {
               ></path>
             </svg>
           </button>
-        </div>
+        </div> */}
       </article>
     </>
   );

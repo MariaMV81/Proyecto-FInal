@@ -16,10 +16,7 @@ export default function BarIcons() {
         <div className="text-icons">
           <h3>FLEXIBILIDAD HORARIA</h3>
           <p>
-            <small>
-              Horario de trabajo flexible.
-              
-            </small>
+            <small>Horario de trabajo flexible.</small>
           </p>
         </div>
       </div>
@@ -44,10 +41,7 @@ export default function BarIcons() {
         <div className="text-icons">
           <h3>CERTIFICADO DE CALIDAD</h3>
           <p>
-            <small>
-              Realiza el mejor servicio posible al cliente.
-              
-            </small>
+            <small>ISO 9001:2015</small>
           </p>
         </div>
       </div>

@@ -23,5 +23,12 @@ export default function CustomerOrders() {
     [] //Array de dependencia para que no me salga todo lo que hay en las listas de la página
   );
 
-  return <>{todos && todos.map((todo) => <Card todos={todo} />)}</>;
+  return (
+    <>
+      <h2>
+        Mis <strong>Pedidos</strong>
+      </h2>
+      {todos && todos.map((todo) => <Card todos={todo} />)}
+    </>
+  );
 }

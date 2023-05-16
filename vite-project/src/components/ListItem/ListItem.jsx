@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function ListItem({ item, setState, toogleState, index, id }) {
   return (
     <>
-      <div className="list-item ">
+      <div className="list-item " >
         <div
           //onClick={() => toogleState(index)}
           className={` ${item.completed && "dark "} `}
         >
-          <Link to={`/Admin/${id} `}>
+          <Link to={`/Admin/${id} `} >
             <span className={`${item.completed}`}>
               <b>Nº Albara: </b>
               {item.n_albaran}

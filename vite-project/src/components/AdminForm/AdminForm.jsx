@@ -77,7 +77,7 @@ export default function AdminForm({ todos }) {
           <div className="form">
             <h2><strong>Albarán</strong></h2>
 
-            <form id="formulario" onSubmit={handleSubmit}>
+            <form id="formulario" onSubmit={handleSubmit} autoComplete="off">
               <div>
                 <input
                   name="n_albaran"

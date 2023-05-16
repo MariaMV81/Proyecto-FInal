@@ -78,7 +78,7 @@ export default function RegisterForm({toggleLogin}) {
           <input
             type="text"
             required
-            placeholder="Direción"
+            placeholder="Dirección"
             name="direccion"
             value={values.direccion}
             onChange={handleChange}

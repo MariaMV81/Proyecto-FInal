@@ -66,7 +66,7 @@ export default function ContactForm() {
             Formulario de <strong>contacto</strong>
           </h2>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} autoComplete="off">
             <input
               name="nya"
               type="text"

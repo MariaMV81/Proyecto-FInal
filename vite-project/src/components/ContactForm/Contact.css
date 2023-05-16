@@ -9,7 +9,7 @@
 }
 .conctact-form{
  position: relative;
-    background: rgb(253, 252, 252);
+    background: transparent;
     width: 100%;
     max-width: 500px; /*ancho maximo*/
     margin: 56px auto; /* auto para centrar*/
