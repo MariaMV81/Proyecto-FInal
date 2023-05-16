@@ -32,7 +32,7 @@ export default function AdminForm({ todos }) {
         Swal.fire({
           position: "",
           icon: "success",
-          title: "Albarán enviado",
+          title: "<p>Albarán enviado</p>",
           showConfirmButton: false,
           timer: 1500,
         });

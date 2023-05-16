@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext/AuthContext";
 import React, { useState } from "react";
 import LOGOMARVIr from "../../assets/img/LOGOMARVIr.png";
+import { ROLES } from "../../const/roles";
 import "./Header.css";
 
 export default function Header() {
@@ -16,7 +17,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logoMarvi">
-        <Link to="/">
+        <Link to="/" className="hover-logo" style={{ textDecoration: "none" }}>
           <img
             src={LOGOMARVIr}
             className="LOGOMARVI"
@@ -28,27 +29,32 @@ export default function Header() {
       <div className="menu-bar">
         <nav className={`nav-menu ${menu ? "isActive" : ""}`}>
           <ul>
-            {authorization.rol == 0 && ( //si hay autorizacion entonces..
-              <div className="li-header">
-                <li>
-                  <Link to="/about"> Sobre nosotros</Link>
-                </li>
-                <li>
-                  <Link to="/cliente"> Clientes</Link>
-                </li>
-                <li>
-                  <Link to="/customerOrders">Mis Pedidos</Link>
-                </li>
-              </div>
-            )}
-
-            {authorization.rol == 1 && (
+            <div className="li-header">
               <li>
-                <Link to={`Admin/${authorization.id}`}>Administrador</Link>
-
-                <Link to="/orderList"> PEDIDOS</Link>
+                <Link to="/about"> Conócenos</Link>
               </li>
-            )}
+              {authorization.rol === ROLES.User && ( //si hay autorizacion entonces..
+                <>
+                  <li>
+                    <Link to="/customerOrders">Mis Pedidos</Link>
+                  </li>
+                  <li>
+                    <Link to="/cliente">Formulario de Pedido</Link>
+                  </li>
+                </>
+              )}
+
+              {authorization.rol === ROLES.Admin && (
+                <>
+                  <li>
+                    <Link to={`Admin/${authorization.id}`}>Administrador</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderList"> PEDIDOS</Link>
+                  </li>
+                </>
+              )}
+            </div>
             {authorization.rol ? (
               <span
                 className="logout"

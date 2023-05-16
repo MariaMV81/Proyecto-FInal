@@ -13,7 +13,7 @@ export default function Admin() {
 
   useEffect(
     () => {
-      console.log(id);
+     
       async function fetchTodos() {
         const response = await fetch(
           `http://localhost:3000/user/albaranes/${id}`
@@ -26,7 +26,7 @@ export default function Admin() {
 
     [] //Array de dependencia para que no me salga todo lo que hay en las listas de la página
   );
-  console.log(id, "holaaa");
+
 
   const albaranEnviado = true; //poner aquí la lógica para determinar si el albarán se envió o no
 

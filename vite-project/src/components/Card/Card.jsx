@@ -1,6 +1,9 @@
 import "./Card.css";
-import {monthNames} from '../../const/monthNames'
-export default function Card({ todos }) {
+import {monthNames} from '../../const/monthNames';
+
+
+
+export default function Card({ todos, item, setState }) {
   return (
     <>
       <article className="article_card">

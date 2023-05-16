@@ -24,7 +24,6 @@ export default function App() {
             <Route index element={<Home />} />
 
             <Route path={ABOUT} element={<About />} />
-            <Route path="customerOrders" element={<CustomerOrders />} />
 
             <Route path={UNAUTHORIZED} element={<Unauthorized />} />
 
@@ -36,12 +35,14 @@ export default function App() {
             {/* Rutas Privadas */}
             <Route element={<PrivateRoute allowedRoles={[ROLES.User]} />}>
               <Route path="cliente" element={<Cliente />} />
+              <Route path="customerOrders" element={<CustomerOrders />} />
 
+              
+            </Route>
               <Route element={<PrivateRoute allowedRoles={[ROLES.Admin]} />}>
                 <Route path="Admin/:id" element={<Admin />} />
                 <Route path="orderList" element={<OrderList />} />
               </Route>
-            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

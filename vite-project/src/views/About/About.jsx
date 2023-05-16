@@ -7,7 +7,7 @@ export default function About() {
     <>
       <div className="image-text">
         <div className="img-javier">
-          <img src={aboutme} alt="javier" width={550} />
+          <img  className="remove-bg" src={aboutme} alt="javier" width={550} />
         </div>
 
         <div className="container-description">

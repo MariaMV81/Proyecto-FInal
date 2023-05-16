@@ -1,20 +1,25 @@
-  .header{
-      display: grid; /*genera una  cuadrícula de nivel de bloque*/
-      grid-template-areas: "logo nav";/*crea una plantilla de cuadricula haciendo referencia con "nombre" a las areas de cuadricula que nombramos */
-      box-shadow: 0 8px 12px -12px;
-      text-transform: uppercase;   
-      position: relative;
-      z-index: 99999;
+.header{
+    display: grid; /*genera una  cuadrícula de nivel de bloque*/
+    grid-template-areas: "logo nav";/*crea una plantilla de cuadricula haciendo referencia con "nombre" a las areas de cuadricula que nombramos */
+    box-shadow: 0 8px 12px -12px;
+    text-transform: uppercase;   
+    position: relative;
+    z-index: 99999;
   }
-
-  .menu-bar{
+.enlace-logo{
+  text-decoration: none;
+}
+.enlace-logo:hover{
+  text-decoration: none;
+}
+.menu-bar{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
  
-
-  .nav-menu{ 
+.nav-menu{ 
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -22,8 +27,25 @@
     justify-items:flex-end;
   
   }
+.nav-menu ul{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+.nav-menu li{
+    margin: 0.5em;
+    list-style-type: none;
+    text-decoration: none;
+  }
 
-  .burger {
+.li-header{
+    display: flex;
+    flex-direction: row;
+  }
+
+.burger {
     display: none;
     position: relative;
     width: 40px;
@@ -32,11 +54,11 @@
     cursor: pointer;
   }
   
-  .burger input {
+.burger input {
     display: none;
   }
   
-  .burger span {
+.burger span {
     display: block;
     position: absolute;
     height: 4px;
@@ -49,50 +71,49 @@
     transition: .25s ease-in-out;
   }
   
-  .burger span:nth-of-type(1) {
+.burger span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
   }
   
-  .burger span:nth-of-type(2) {
+.burger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
   }
   
-  .burger span:nth-of-type(3) {
+.burger span:nth-of-type(3) {
     top: 100%;
     transform-origin: left center;
     transform: translateY(-100%);
   }
   
-  .burger input:checked ~ span:nth-of-type(1) {
+.burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 0px;
     left: 5px;
   }
   
-  .burger input:checked ~ span:nth-of-type(2) {
+.burger input:checked ~ span:nth-of-type(2) {
     width: 0%;
     opacity: 0;
   }
   
-  .burger input:checked ~ span:nth-of-type(3) {
+.burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 28px;
     left: 5px;
   }
 
-
-  .logout{
-    color: orangered;
+.logout{
+    color: #f87724;
   }
 
-  a:visited {
+a:visited {
       color: gray;
     }
 
-  a:Link{
+a:Link{
       color: grey;
       text-decoration: none;
       padding: 10px;
@@ -100,60 +121,59 @@
       margin-right: 10px;
 
   }
-  a:active{
-      color:orangered;
+  .hover-logo:hover{
+    border-bottom: 0px solid;
+  }
+a:active{
+    color:orangered;
   }
 
-  a:focus {
-      border-bottom: 1px solid ;
+a:focus {
+    border-bottom: 1px solid ;
     
     }
     
-    a:hover {
-      border-bottom: 1px solid ;
+a:hover {
+    border-bottom: 1px solid ;
   
     }
-    .nav-menu ul{
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-    text-decoration: none;
-  }
-  .nav-menu li{
-    margin: 0.5em;
-    list-style-type: none;
-    text-decoration: none;
-  }
+   
 
-  @media screen and (max-width: 768px ){
-    .burger{
-        display: flex;
+@media screen and (max-width: 768px ){
+  .burger{
+      display: flex;
+      flex-direction: column;
     }
-    .burger span.isActive{
+  .burger span.isActive{
       background-color: orangered;
     }
-    .nav-menu{
-        width: 100%;
-        display:flex;
-        flex-direction: column;
-        justify-content:space-between; /*vertical*/
-        align-items: center; /*horizontal*/
-        height: 0vh;
-        opacity: 0;
-        overflow: hidden;
-        transition: all .5s ease;
+  .nav-menu{
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      justify-content:space-between; /*vertical*/
+      align-items: center; /*horizontal*/
+      height: 0vh;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .5s ease;
     }
-    .nav-menu.isActive{
+  .nav-menu.isActive{
       
-        opacity: 1;
-        height: 30vh;
+      opacity: 1;
+      height: 30vh;
         
     }
-    .nav-menu ul{
-        flex-direction: column;
+  .nav-menu ul{
+      flex-direction: row;
     }
-    .nav-menu li{
-        margin: .5em 0;
+  .nav-menu li{
+      margin: .5em 0;
+    }
+
+  .li-header{
+    display: flex;
+    flex-direction: column;
     }
     
   }

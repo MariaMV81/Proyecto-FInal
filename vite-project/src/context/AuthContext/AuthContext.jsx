@@ -18,7 +18,7 @@ export function AuthContextProvider({ children }) {
   const [authorization, setAuthorization] = useState(
     JSON.parse(window.localStorage.getItem(MY_AUTH_APP)) ?? {
       email: null,
-      role: null,
+      rol: null,
     }
   );
   const [errorMessage, setErrorMessage] = useState(null);

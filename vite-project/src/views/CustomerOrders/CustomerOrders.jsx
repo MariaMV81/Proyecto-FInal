@@ -7,7 +7,6 @@ export default function CustomerOrders() {
   const [todos, setTodos] = useState("");
   const { authorization } = useAuthContext();
 
-
   useEffect(
     () => {
       async function fetchTodos() {
@@ -23,18 +22,6 @@ export default function CustomerOrders() {
 
     [] //Array de dependencia para que no me salga todo lo que hay en las listas de la página
   );
-  
 
-  return (
-    
-    <>
-    
-      {todos && todos.map((todo) => (
-        <Card todos={todo}
-      
-        
-        />
-      ))}
-    </>
-  );
+  return <>{todos && todos.map((todo) => <Card todos={todo} />)}</>;
 }

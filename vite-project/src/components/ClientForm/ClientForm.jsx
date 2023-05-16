@@ -39,7 +39,6 @@ export default function ClientForm({ setState, state, onSubmit }) {
         alert("ya enviado");
       }
     });
-    await new Promise((resolve) => setTimeout(resolve, 2000));
     actions.resetForm();
   }
 

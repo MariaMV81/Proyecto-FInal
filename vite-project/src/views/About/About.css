@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+.remove-bg{
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+}
 .image-text{
     display: flex;
     flex-direction: column;
@@ -8,6 +12,8 @@
 }
 .img-javier{
     position: relative;
+    border-top: 2px solid #f77427;
+    border-left: 2px solid #f77427;
 }
 
 .container-description{

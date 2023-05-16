@@ -54,8 +54,8 @@ export default function OrderList() {
         <div className="container-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d798155.22585931!2d-6.216601510861039!3d38.60761483549214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd1374262289cd91%3A0x100f625102c8464f!2sAzuaga%2C%2006920%2C%20Badajoz!3m2!1d38.261261999999995!2d-5.6747209!4m5!1s0xd145b1df8e24da3%3A0x692f014a1c3334e1!2sDon%20Benito!3m2!1d38.954463!2d-5.8618982!5e0!3m2!1ses!2ses!4v1677165126285!5m2!1ses!2ses"
-            width="500"
-            height="350"
+            width="700"
+            height="450"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
